@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/squeeze/.mbsync'
+let g:netrw_dirhist_2='/home/squeeze'
+let g:netrw_dirhist_3='/home/squeeze/.tmux/plugins/tmux-powerline'
+let g:netrw_dirhist_4='/home/squeeze/.tmux/plugins/tmux-powerline/segments'
+let g:netrw_dirhist_5='/home/squeeze/.tmux/plugins/tmux-powerline'
+let g:netrw_dirhist_6='/home/squeeze/.tmux/plugins/tmux-powerline/segments'
+let g:netrw_dirhist_7='/home/squeeze/.tmux/plugins/tmux-powerline'
+let g:netrw_dirhist_8='/home/squeeze/.tmux/plugins/tmux-powerline/themes'
