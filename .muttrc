@@ -1,0 +1,34 @@
+set realname="Marc Schnitzius"
+set from="mail@schnitzius.com"
+set use_from=yes
+
+set edit_headers=yes
+
+set header_cache = "~/.cache/mutt"
+set mbox_type=Maildir
+set spoolfile="~/Mail/"
+
+set pager_index_lines=12
+set index_format = "%Z│%-15.15F│%3M│%s %* │%[%Y-%m-%d %H:%M]"
+
+set sort = 'threads'
+set sort_aux = 'reverse-last-date-received'
+
+mailboxes +Inbox
+
+set editor="vim +"
+
+set sendmail="/usr/bin/msmtp"'
+
+bind editor <space> noop
+macro index,pager a "<save-message>=[Google Mail]/.All Mail<enter><enter>" "Archive"
+macro index,pager d "<save-message>=[Google Mail]/.Bin<enter><enter>" "Trash"
+macro index gi "<change-folder>=Inbox<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Google Mail]/.All Mail<enter>" "Go to all mail"
+macro index gd "<change-folder>=[Google Mail]/Drafts<enter>" "Go to drafts"
+
+set folder = ~/Mail
+#set record="~/Mail/Sent"
+#set postponed="~/Mail/[Google Mail]/Drafts"
+
+source ~/.mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
