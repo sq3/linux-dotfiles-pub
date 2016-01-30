@@ -1,23 +1,11 @@
 # Shell Aliases and Functions.
-alias l='ls -Fla --color=auto --group-directories-first --block-size='"\'1"
-ll() { l --color=always "$@" | less; }
-tla() { tree -FCa "$@" | less -r; }
-hhtop() {
-	mkdir -p ~/.config/htop
-	cp /etc/htoprc.global ~/.config/htop/htoprc
-	cp /etc/htoprc.global ~/.htoprc
-	htop
-}
-mt()
-{
-	mkdir -p -- "$@" && cd -- "$@"
-}
+
 alias v='vim -p'
 alias t='mt /tmp; l'
 alias tt='mt /tmp/tmp; l'
 alias ttr='cd -- "$(mktemp -d)"; l'
 alias l='ls -lahtr --color=auto'
-alias rss='newsbeuter -r -u .newsbeuter/urls_squeeze -C .newsbeuter/config'
+alias ls='lsi --color=auto'
 
 # Environment (Shell).
 export PS1='\[\e[1;32m\]\u@\H:\[\e[m\] \[\e[1;37m\]\w\[\e[m\]\n\[\e[1;33m\]\[\e[0;33m\]\[\e[1;31m\]\$\[\e[m\] '

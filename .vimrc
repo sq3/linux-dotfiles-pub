@@ -10,10 +10,7 @@ set background=dark
 set number
 highlight LineNr ctermfg=black ctermbg=grey
 
-let g:airline_powerline_fonts = 1
-
 colorscheme solarized
-
 
 set nocompatible backspace=indent,eol,start autoindent ts=4 textwidth=0 backupcopy=yes history=500 ruler so=5 cmdheight=2 hh=20 wh=65 hlsearch ic nofoldenable t_Co=256 t_Sf=m t_Sb=m bg=dark showcmd incsearch
 
@@ -25,13 +22,13 @@ set showmatch
 " Statusline
 " ==========
 set laststatus=2
-"set statusline=%f\ %y\ \ %h%m%r
-"                \\ \ %#Error#%{&ff=='unix'?'':'\ '.&ff.'\ '}%*
-"                \\ \ %#Error#%{&fenc==''?'':&fenc=='utf-8'?'':'\ '.&fenc.'\ '}%*
-"                \\ \ %#Error#%{&bomb?'\ BOM\ ':''}%*
-"                \\ \ %#Error#%{&paste?'\ PASTE\ ':''}%*
-"                \%=\ [C:%4b,%4B]\ [X:%3v/%3{&tw}]\ [Y:%5l/%5L]
-"
+set statusline=%f\ %y\ \ %h%m%r
+                \\ \ %#Error#%{&ff=='unix'?'':'\ '.&ff.'\ '}%*
+                \\ \ %#Error#%{&fenc==''?'':&fenc=='utf-8'?'':'\ '.&fenc.'\ '}%*
+                \\ \ %#Error#%{&bomb?'\ BOM\ ':''}%*
+                \\ \ %#Error#%{&paste?'\ PASTE\ ':''}%*
+                \%=\ [C:%4b,%4B]\ [X:%3v/%3{&tw}]\ [Y:%5l/%5L]
+
 set wildmenu
 "
 " Powerline
@@ -111,8 +108,3 @@ fun! ToggleTextwidth(...)
 endfun
 nmap <Leader>W :call ToggleTextwidth()<CR>
 call ToggleTextwidth(1)
-
-" open NerdTree with start
-au VimEnter *  NERDTree
-
-let g:nerdtree_tabs_open_on_console_startup=1
