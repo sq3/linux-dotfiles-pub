@@ -2,14 +2,8 @@
 - link: {
         "~/.bashrc": ".bashrc",
         "~/.direcolors-solarized": "direcolors-solarized",
-        "~/.fonts": ".fonts",
-        "~/.muttrc": ".muttrc",
-        "~/.mutt-colors-solarized": "mutt-colors-solarized",
-        "~/.tmux/": ".tmux",
-        "~/.tmux.conf": "tmux.conf",
         "~/.vim": "vim",
         "~/.vimrc": ".vimrc",
-
 }
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
