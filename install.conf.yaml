@@ -1,7 +1,7 @@
 - clean: ['~']
 - link: {
         "~/.bashrc": ".bashrc",
-        "~/.direcolors-solarized": "direcolors-solarized",
+        "~/.dircolors-solarized": "dircolors-solarized",
         "~/.vim": "vim",
         "~/.vimrc": ".vimrc",
 }
