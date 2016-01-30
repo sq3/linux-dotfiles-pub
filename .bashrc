@@ -1,11 +1,9 @@
 # Shell Aliases and Functions.
 
 alias v='vim -p'
-alias t='mt /tmp; l'
-alias tt='mt /tmp/tmp; l'
-alias ttr='cd -- "$(mktemp -d)"; l'
+alias t='cd /tmp; l'
 alias l='ls -lahtr --color=auto'
-alias ls='lsi --color=auto'
+alias ls='ls --color=auto'
 
 # Environment (Shell).
 export PS1='\[\e[1;32m\]\u@\H:\[\e[m\] \[\e[1;37m\]\w\[\e[m\]\n\[\e[1;33m\]\[\e[0;33m\]\[\e[1;31m\]\$\[\e[m\] '
