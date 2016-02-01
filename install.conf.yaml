@@ -2,6 +2,7 @@
 - link: {
         "~/.bashrc": ".bashrc",
         "~/.dircolors-solarized": "dircolors-solarized",
+        "~/.screenrc": "screenrc",
         "~/.vim": "vim",
         "~/.vimrc": ".vimrc",
 }
