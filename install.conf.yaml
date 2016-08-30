@@ -1,6 +1,7 @@
 - clean: ['~']
 - link: {
         "~/.bashrc": ".bashrc",
+        "~/.bashrc": "~/bash_profile",
         "~/.direcolors-solarized": "direcolors-solarized",
         "~/.fonts": ".fonts",
         "~/.muttrc": ".muttrc",
